@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(65, 105, 225, 0.2);
+  border-radius: 10rem;
+}
+
+input:hover,
+input:active,
+input:visited {
+  outline: none;
+  border: none;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+:root {
+  --green: rgb(20, 197, 20);
+  --lightgreen: rgb(87, 219, 87);
+  --red: #B20000;
+  --bs-low: 0 0 15px rgba(0, 0, 0, 0.05);
+  --bs-high: 0 0 15px rgba(0, 0, 0, 0.2);
+  --bs-medium: 0 0 15px rgba(0, 0, 0, 0.1);
+  --lightred: rgb(238, 77, 77);
+  --lightredtransparent: rgba(240, 46, 46, 0.8);
+  --black: rgba(0, 0, 0, 0.6);
+  --lblack: rgba(0, 0, 0, 0.1);
+  --bblack: rgba(0, 0, 0, 0.05);
+  --blue: rgba(65, 105, 225, 0.7);
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+body {
+  padding: 3rem 6rem;
+}
+
+header {
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.05);
+  /* border: 1px solid var(--bblack); */
+  border-radius: 5px;
+}
+
+nav {
+  padding: 1rem 2rem;
+}
+
+nav * {
+  align-self: center;
+}
+
+.navbrand h3 {
+  margin-left: 1rem;
+}
+
+.navlinks a {
+  padding: .5rem;
+  border: 1px solid var(--bblack);
+  margin: 0 .5rem;
+  border-radius: 3rem;
+}
+
+main {
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 2rem 0;
+  /* border: 1px solid var(--bblack) */
+}
+
+.bot-msg {
+  padding: 1rem;
+  background: rgba(245, 245, 245, 0.5);
+  border-radius: 20px 20px 20px 0;
+  max-width: 30rem;
+  width: max-content;
+  color: var(--black);
+  text-align: left;
+}
+
+.msg {
+  margin-bottom: .5rem;
+  font-size: 13px;
+  animation: in .5s;
+  transform: scale(1);
+  border: 1px solid transparent;
+}
+
+.your-msg {
+  padding: 1rem;
+  background: var(--blue);
+  border-radius: 20px 20px 0 20px;
+  max-width: 30rem;
+  width: max-content;
+  align-self: flex-end;
+  color: white;
+  text-align: left;
+}
+
+.msg:hover {
+  border: 1px solid var(--bblack);
+  background: white;
+  /* box-shadow: 0 0 60px rgba(0, 0, 0, 0.1); */
+  color: var(--black);
+}
+
+/* .msg{
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--bblack);
+} */
+
+.msg ul {
+  padding-left: 1rem;
+}
+
+.message-area {
+  width: 100%;
+  height: 50vh;
+  overflow: auto;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.input-bar {
+  padding: .5rem;
+  border: none;
+  background: rgba(245, 245, 245, 0.5);
+  border-radius: 3rem;
+  min-width: 35rem;
+}
+
+input {
+  border: none;
+  background: inherit;
+  width: 100%;
+  padding-left: 1rem;
+  border-radius: 3rem;
+}
+
+.send {
+  color: white;
+  background: var(--blue);
+  padding: .5rem 2rem;
+  border-radius: 3rem;
+  margin-left: 1rem;
+}
+
+.send:hover {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  background: white;
+  color: var(--black);
+}
+
+button {
+  padding: .5rem;
+  /* width: 100%; */
+  border: none;
+  background: rgba(245, 245, 245, 0.5);
+  cursor: pointer;
+  transition: .2s;
+}
+
+form .row {
+  width: 100%;
+}
+
+.actions {
+  /* margin-left: 1rem; */
+  width: 100%;
+  /* background: red; */
+  justify-content: center;
+}
+
+.actions button {
+  width: 3rem;
+  margin: 0 1rem 0 0;
+  border-radius: 5rem;
+  color: grey;
+  border: 1px solid transparent;
+  font-size: 20px;
+}
+
+.actions button:hover {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  background: white;
+  color: var(--blue);
+  border: 1px solid var(--bblack);
+}
+
+.notify {
+  /* background: red; */
+  width: 100%;
+  justify-content: center;
+  color: var(--black);
+  background: var(--blue);
+  border-radius: 3rem;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+}
+
+form {
+  overflow: auto;
+  margin-top: 1rem;
+}
+
+button.listening {
+  color: var(--lightgreen);
+  animation: infinite 2s blink;
+}
+
+@keyframes blink {
+  25% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: .25;
+  }
+}
+
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  /* visibility: hidden; */
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+  transform: scale(1);
+  animation: 1s in;
+}
+
+iframe {
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+#directions {
+  color: var(--black);
+  font-size: 14px;
+}
+
+#form input {
+  padding: 1rem;
+  background: whitesmoke;
+  margin: 1rem 0;
+}
+
+#form .send {
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* .bar{
+  margin: .5rem 0 0 0;
+} */
+
+.map-pin {
+  font-size: 2rem;
+  color: var(--lightredtransparent);
+  animation: blink 1s infinite;
+}
+
+.map {
+  border: 1px solid var(--bblack);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin: 1rem 0;
+  width: 50rem;
+  height: 30rem;
+}
+
+.close-modal {
+  background: var(--lightred);
+  color: white;
+  border-radius: 5px;
+  /* margin-bottom: .5rem; */
+}
+
+@keyframes in {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+
+}
+
+#choose button.send {
+  margin: 0;
+  width: 100%;
+  border-radius: 5px;
+  margin: .5rem;
+}
+
+#choose p {
+  margin: .5rem;
+  color: var(--black);
+}
+
+@media screen and (max-width: 740px) {
+  body{
+    padding: 0;
+  }
+
+  nav{
+    padding: .5rem 1rem;
+  }
+  
+  main{
+    margin: 1rem;
+    /* box-shadow: 0 0 0; */
+    padding: 1rem .5rem;
+    border-radius: 5px;
+    /* border-radius: 0 0 2rem 2rem; */
+  }
+
+  .input-bar{
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .section-form{
+    flex-direction: column-reverse;
+  }
+
+  .notify{
+    padding: .5rem;
+    font-size: 13px;
+  }
+
+  .actions{
+    margin: .5rem 0;
+  }
+
+  .message-area{
+    height: 53vh;
+  }
+
+  .msg{
+    padding: .5rem 1rem;
+    max-width: 15rem;
+  }
+
+  .bot-msg{
+    margin-left: .5rem;
+  }
+
+  .modal-content{
+    padding: .5rem;
+  }
+
+  .map{
+    position: relative;
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .navbrand{
+    font-size: 13px;
+  }
+
+  .send{
+    padding: .5rem 1rem;
+  }
+
+}
