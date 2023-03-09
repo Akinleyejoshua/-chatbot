@@ -4,8 +4,8 @@ import {get} from "./helpers";
 
 const settings = {
 
-    // baseURL:'https://j-ml-models.herokuapp.com/api/chatbot/',
-    baseURL:'http://localhost:5000/api/chatbot/',
+    // baseURL:'http://localhost:5000/api/chatbot/',
+    baseURL:'https://web-production-ebf7.up.railway.app/api/chatbot/',
 	
     headers: {
         Accept: 'application/json,text/plain,*/*',
