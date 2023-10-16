@@ -5,7 +5,7 @@ import {get} from "./helpers";
 const settings = {
 
     // baseURL:'http://localhost:5000/api/chatbot/',
-    baseURL:'https://web-production-ebf7.up.railway.app/api/chatbot/',
+    baseURL:'https://j-web-ml-production.up.railway.app/api/chatbot/',
     // baseURL:'https://dl-web-api-django-production.up.railway.app',
 	
     headers: {
