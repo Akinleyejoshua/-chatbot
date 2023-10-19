@@ -44,6 +44,9 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
+    ],
+    "engine": {
+      "node": "^18.18.2",
+      "npm": "9.8.1"
   }
 }
